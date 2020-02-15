@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucd.java.rps.controller.RPSC_PlayerOne">
+   <children>
+      <Label layoutX="179.0" layoutY="14.0" prefHeight="45.0" prefWidth="321.0" text="WELCOME TO ROCK PAPER SCISSOR" textAlignment="CENTER" textFill="#d71313">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbPlayerOneName" layoutX="327.0" layoutY="106.0" prefHeight="45.0" prefWidth="147.0" text="PLAYER ONE" textAlignment="CENTER" textFill="#2c2929">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbplaying_p1" layoutX="228.0" layoutY="106.0" prefHeight="45.0" prefWidth="99.0" text="PLAYING, " textAlignment="CENTER" textFill="#1c1b1b">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbGameRes_pone" layoutX="-4.0" layoutY="403.0" prefHeight="45.0" prefWidth="700.0" textAlignment="CENTER" textFill="#d71313">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbPlayerOneChoice" layoutX="250.0" layoutY="169.0" onAction="#playerOneChoice" prefWidth="150.0" promptText="Select Choice" />
+      <Button fx:id="btnPlayerOneSubmit" layoutX="252.0" layoutY="272.0" mnemonicParsing="false" onAction="#submitP1Choice" prefHeight="30.0" prefWidth="150.0" text="SUBMIT" textFill="#46e83d">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbValidationP1" layoutX="14.0" layoutY="403.0" prefHeight="45.0" prefWidth="690.0" textAlignment="CENTER" textFill="#d71313">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnP1lb" layoutX="33.0" layoutY="361.0" mnemonicParsing="false" onAction="#showLeaderBoardP1" prefHeight="30.0" prefWidth="150.0" text="Game Records" textFill="#46e83d">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnP1record" layoutX="250.0" layoutY="361.0" mnemonicParsing="false" onAction="#showPlayerRecordP1" prefHeight="30.0" prefWidth="150.0" text="Players Record" textFill="#46e83d">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnP1exit" layoutX="474.0" layoutY="361.0" mnemonicParsing="false" onAction="#exitp1" prefHeight="30.0" prefWidth="150.0" text="Exit" textFill="#46e83d">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

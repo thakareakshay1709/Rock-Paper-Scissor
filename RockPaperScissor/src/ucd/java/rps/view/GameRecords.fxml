@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucd.java.rps.controller.RPSC_GameLeaderBoard">
+   <children>
+      <TableView fx:id="tableviewGameRec" layoutX="10.0" layoutY="173.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="colPlayerOne" prefWidth="150.0" text="PlayerOne" />
+          <TableColumn minWidth="0.0" prefWidth="0.0" text="C2" />
+            <TableColumn fx:id="colPlayerTwo" prefWidth="176.0" text="PlayerTwo" />
+            <TableColumn fx:id="colWinner" prefWidth="202.0" text="Winner" />
+            <TableColumn fx:id="colDate" prefWidth="139.0" text="Date" />
+        </columns>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </TableView>
+      
+      <Label layoutX="238.0" layoutY="38.0" prefHeight="27.0" prefWidth="208.0" text="Previous Game Records" textAlignment="JUSTIFY" textFill="#e8192a">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <AnchorPane layoutY="65.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="700.0">
+         <children>
+            <Button fx:id="btnGameRecbck" layoutX="27.0" layoutY="55.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#gameRecordsBack" prefHeight="30.0" prefWidth="150.0" text="BACK" textFill="#152bd3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGameRecexit" layoutX="513.0" layoutY="55.0" mnemonicParsing="false" onAction="#gameRecordsExit" prefHeight="30.0" prefWidth="150.0" text="EXIT" textFill="#152bd3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </AnchorPane>
+     
+   </children>
+</AnchorPane>

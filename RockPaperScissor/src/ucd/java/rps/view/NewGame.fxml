@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucd.java.rps.controller.RPSC_NewGame">
+   <children>
+      <Label layoutX="205.0" layoutY="14.0" prefHeight="45.0" prefWidth="318.0" text="WELCOME TO ROCK PAPER SCISSOR" textAlignment="CENTER" textFill="#d71313">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnNewGame" layoutX="216.0" layoutY="335.0" mnemonicParsing="false" onAction="#playersName" prefHeight="31.0" prefWidth="150.0" text="NEW GAME" />
+      <Label fx:id="lblStatus" layoutX="216.0" layoutY="399.0" prefHeight="30.0" prefWidth="447.0" textFill="#f51111">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPlayerOneName" layoutX="216.0" layoutY="135.0" promptText="Player 1" />
+      <TextField fx:id="txtPlayerTwoName" layoutX="216.0" layoutY="185.0" promptText="Player 2" />
+      <ComboBox fx:id="cbChooseTurn" layoutX="216.0" layoutY="242.0" onAction="#chooseTurn" prefWidth="150.0" promptText="Choose Turn" />
+   </children>
+</AnchorPane>
